@@ -395,7 +395,7 @@ function createHTML(options = {}) {
             content.oninput = function (_ref) {
                 // var firstChild = _ref.target.firstChild;
                 if ((anchorNode === void 0 || anchorNode === content) && queryCommandValue(formatBlock) === ''){
-                    formatParagraph(true);
+                    // formatParagraph(true);
                 } else if (content.innerHTML === '<br>') content.innerHTML = '';
 
                 saveSelection();
