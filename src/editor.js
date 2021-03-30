@@ -24,6 +24,7 @@ function createHTML(options = {}) {
         placeholderColor = '#a9a9a9',
         contentCSSText = '',
         cssText = '',
+        selectionColor = '#000',
         pasteAsPlainText = false,
         pasteListener = false,
         keyDownListener = false,
@@ -42,7 +43,7 @@ function createHTML(options = {}) {
     <style>
         * {outline: 0px solid transparent;-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-touch-callout: none;box-sizing: border-box;}
         html, body { margin: 0; padding: 0;font-family: Arial, Helvetica, sans-serif; font-size:1em;}
-        body { overflow-y: hidden; -webkit-overflow-scrolling: touch;height: 100%;background-color: ${backgroundColor};}
+        body { overflow-y: hidden; -webkit-overflow-scrolling: touch;height: 100%;background-color: ${backgroundColor};caret-color: ${selectionColor};}
         .content {font-family: Arial, Helvetica, sans-serif;color: ${color}; width: 100%;height: 100%;-webkit-overflow-scrolling: touch;padding-left: 0;padding-right: 0;}
         .pell { height: 100%;} .pell-content { outline: 0; overflow-y: auto;padding: 10px;height: 100%;${contentCSSText}}
     </style>
